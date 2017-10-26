@@ -58,11 +58,11 @@ function getRandomQuote() {
   var val = uniqueRandoms[index];
 
   //  remove value from the array
-  uniqueRandoms.splice(index, 1);
+  var splicedQuote = uniqueRandoms.splice(index, 1);
 
   //log the index
-  console.log(val);
-  return val;
+  console.log(splicedQuote);
+  return splicedQuote;
 }
 
 function printQuote() {
